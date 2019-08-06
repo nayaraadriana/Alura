@@ -1,0 +1,171 @@
+body{
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    background-color: #851944;
+    padding: 30px 0 30px 0;
+    margin: 0 auto;  
+    text-align: center;
+    border-bottom: 8px solid black;
+
+}
+
+.cabecalho img{
+    width: 10%;
+}
+
+h1{
+    font-size: 55px;
+    color: white;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.subtitulo{
+    font-family: 'Open Sans Condensed';
+    color: white;
+    font-size: 18px;
+}
+
+
+.saudacao-inicial{
+    width: 50%;
+    margin: 0 auto;
+    padding: 60px;
+      
+
+}
+
+.saudacao-inicio{
+    float: left;
+    clear: both;
+    padding: 5px;
+    
+}
+
+.saudacao-final{
+    float: right;
+    clear: both;
+    padding-top: 5px;
+    padding-bottom: 60px;
+}
+
+.medio {
+    font-size: 70px;
+    color: #888899;
+
+}
+
+.pequeno{
+    font-size: 25px;
+    color: #888899;
+}
+
+strong{
+    font-size: 60px;
+}
+
+em{
+    font-size: 100px;
+    color: #851944;
+    font-weight: 500;
+}
+
+.veja-mais{
+    background-color: #851944;
+    border: 3px solid black;
+    text-align: center;
+    text-decoration: none;
+    clear: both;
+    display: block;
+    padding: 24px;
+    margin: 0 auto;
+
+    width: 50%;
+    font-size: 22px;
+    color: white;
+    
+}
+
+.container{
+    border-bottom: 8px solid black;
+
+}
+
+.meio{
+    background-color: #3C1D3D;
+}
+
+
+.trabalhos{
+    width: 70%;
+    margin: 0 auto;
+    padding:  20px 30px;
+}
+
+
+
+h2{
+    font-size: 50px;
+    color: white; 
+}
+
+.trabalhos figure{
+    border: 5px solid black;
+    margin-bottom: 30px;
+}
+
+ figure img{
+    width: 33%;
+    display: inline-block;
+}
+
+.final{
+    background-color: #999999;
+    border-bottom: 10px solid #851944;
+    
+}
+
+.blog{
+    width: 70%;
+    margin: 0 auto;
+    padding:  20px 30px;
+    
+}
+.blog p{
+    color: white;
+    font-size: 20px;
+}
+
+.chamada-post {
+    font-size: 22px;
+    color: pink;
+    display: inline-block;
+    margin: 30px 0;
+    
+}
+
+.rodape{
+    width: 70%;
+    margin: 0 auto;
+    padding:  0 30px;
+}
+
+footer h3{
+    font-size: 35px;
+    font-family: 'Open Sans Condensed';
+    margin: 20px 0;
+
+}
+
+footer p{
+    font-size: 20px;
+    
+}
+footer a{
+    text-decoration: none;
+    color: #851944;
+}

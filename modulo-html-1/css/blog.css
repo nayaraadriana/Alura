@@ -1,0 +1,39 @@
+body{
+    font-size: 16px;
+}
+
+
+.tags{
+    background-color: transparent;
+    font-family: 'Crimson Text';
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+
+}
+
+.tags a{
+    font-family: 'Crimson Text';
+}
+
+article{
+    margin: 1.25rem 0;
+    
+}
+
+article p{
+    margin: 0;
+}
+
+.Leia-mais{
+    font-size: 1em;
+    display: inline-block;
+    background-color: #3C1D3D;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    
+    
+}

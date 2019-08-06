@@ -1,0 +1,20 @@
+header{
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    
+}
+
+.titulo{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3.75rem;
+    background-color:  #851944;
+    color: #fff;
+    text-align: center;
+    padding: 1.56rem;
+    border-bottom: 0.625rem solid black;
+    text-transform: uppercase;
+}

@@ -1,3 +1,24 @@
+<?php
+function pegarArquivosCSS ($arquivo) {
+    return "/Alura/modulo-html-1/css/$arquivo" ;
+}
+?>
+
+<?php 
+function pegarArquivoIMG ($arquivo) {
+    return "/Alura/modulo-html-1/img/$arquivo" ;
+}
+?>
+
+<?php 
+function pegarArquivoPagina ($arquivo) {
+    return "/Alura/modulo-html-1/$arquivo" ;
+}
+?>
+
+
+
+
 <!DOCTYPE html>
     <head>
         <title>Biografia - João da Silva</title>
@@ -6,20 +27,69 @@
 
         <!-- carrega a fonte Crimson Text nas versões normal, itálico e negrito -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
-
+        
         <!-- carrega a fonte Open Sans Condensed na versão negrito, -->
         <!-- que é a única necessária para os cabeçalhos            -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
         
-        <link rel="stylesheet" href="../Alura/css/reset.css">
-        <link rel="stylesheet" href="../Alura/css/bio.css">
+        <link rel="stylesheet" href=" <?php echo pegarArquivosCSS ("reset.css") ?>">
+        <link rel="stylesheet" href=" <?php echo pegarArquivosCSS ("header.css") ?>">
+        <link rel="stylesheet" href=" <?php echo pegarArquivosCSS ("bio.css") ?>">
+        <link rel="stylesheet" href=" <?php echo pegarArquivosCSS ("barra-lateral.css") ?>">
+        <link rel="stylesheet" href=" <?php echo pegarArquivosCSS ("citacao.css")?>">
+        <link rel="stylesheet" href=" <?php echo pegarArquivosCSS ("icones-sociais.css")?>">
+        <link rel="stylesheet" href=" <?php echo pegarArquivosCSS( "footer.css")?> ">
+        
         
     </head>
-
+    
     <body>
+        
+        <header>
+                <h1 class="titulo">Sobre mim</h1>
+        </header>
+        
+        <aside class="navegacao-site">
+    
+            <figure>
+                <img src="<?php echo pegarArquivoIMG ("eu.jpg")?>" alt="Foto João da Silva">
+            </figure>
+                
+            <div class="container-menu">
+                
+                <h1>João da Silva</h1>
+    
+                <nav>
+                    <ul>
+                        <li><a href="<?php echo pegarArquivoPagina ("index.php")?>">HOME</a></li> 
+                        <li><a href="<?php echo pegarArquivoPagina ("portfolio.php")?>">Portfolio</a></li> 
+                        <li><a href="<?php echo pegarArquivoPagina ("bio.php")?>">Sobre mim</a></li> 
+                        <li><a href="<?php echo pegarArquivoPagina ("blog.php")?>">Blog</a></li>
+                        <li><a href="<?php echo pegarArquivoPagina ("contato.php")?>">Contato</a></li>
+                    </ul>
+    
+                    <ul class="icones-sociais">
+                        <li>
+                            <a href="https://github.com/joaodasilva" class="github">
+                                github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/joaodasilva" class="twitter">
+                                twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com" class="linkedin">
+                               linkedin 
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>   
+        
         <main>
-
-            <h1>Sobre mim</h1>
 
             <div>
 
@@ -64,54 +134,13 @@
             <h2>Comunidade</h2>
 
                 <p>Procuro repassar meu conhecimento para a comunidade. 
-                Para isso, já dei <a href="../arquivos do projeto/porftolio.html">diversas palestras</a> 
-                e mantenho um <a href="../arquivos do projeto/blog.html">blog</a>.
+                Para isso, já dei <a href="<?php echo pegarArquivoPagina ("portfolio.php")?>">diversas palestras</a> 
+                e mantenho um <a href="<?php echo pegarArquivoPagina ("blog.php")?>">blog</a>.
                 </p>
 
             </div>
         </main>
 
-        
-        
-
-        <aside class="navegacao-site">
-
-            
-                <img src="../Alura/img/eu.jpg" alt="foto joão da Silva">
-            
-         
-            <h1>João da Silva</h1>
-
-            <nav>
-                <ul>
-                    <li><a href="../arquivos do projeto/index.html">HOME</a></li> 
-                    <li><a href="../arquivos do projeto/porftolio.html">Portfolio</a></li> 
-                    <li><a href="../arquivos do projeto/bio.html">Sobre mim</a></li> 
-                    <li><a href="../arquivos do projeto/blog.html">Blog</a></li>
-                    <li><a href="../arquivos do projeto/contato.html">Contato</a></li>
-                </ul>
-
-                <ul class="icones-sociais">
-                    <li>
-                        <a href="https://github.com/joaodasilva" class="github">
-                            github
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/joaodasilva" class="twitter">
-                            twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com" class="linkedin">
-                           linkedin 
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-        </aside>
-        
         <footer>
         © João da Silva 2014
         </footer>
